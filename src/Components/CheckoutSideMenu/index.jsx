@@ -7,6 +7,11 @@ import "./styles.css";
 const CheckoutSideMenu = () => {
   const context = useContext(ShoppingCartContext);
 
+  const handleDelete = (id) => {
+    const filteredProducts = context.carProduct.filter(product => product.id != id);
+    context.setCarProduct(filteredProducts);
+  }
+
   return (
     <aside
       className={`${
@@ -29,9 +34,11 @@ const CheckoutSideMenu = () => {
           <>
             <OrderCard
               key={product.id}
+              id={product.id}
               title={product.title}
               imageUrl={product.image}
               price={product.price}
+              handleDelete={handleDelete}
             />
           </>
         ))}
