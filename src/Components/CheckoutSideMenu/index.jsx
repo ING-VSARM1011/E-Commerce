@@ -24,6 +24,7 @@ const CheckoutSideMenu = () => {
 
     context.setOrder([...context.order, orderToAdd]);
     context.setCarProduct([]);
+    context.setSearchByTitle("");
   }
 
   return (
