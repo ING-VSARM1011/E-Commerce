@@ -13,7 +13,7 @@ const Navbar = () => {
             <ul className='flex items-center gap-3'>
                 <li className='font-semibold text-lg'>
                     <NavLink 
-                        to='/'
+                        to='/E-Commerce'
                         onClick={() => context.setSearchByCategory()}
                     >
                         Shopi
@@ -21,7 +21,7 @@ const Navbar = () => {
                 </li>
                 <li>
                     <NavLink 
-                        to='/'
+                        to='/E-Commerce'
                         onClick={() => context.setSearchByCategory()}
                         className={({ isActive }) => isActive ? activeStyle : undefined}
                     >
