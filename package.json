@@ -29,7 +29,7 @@
     "gh-pages": "^6.1.1",
     "postcss": "^8.4.31",
     "tailwindcss": "^3.3.3",
-    "vite": "^4.5.3"
+    "vite": "^4.5.5"
   },
   "homepage": "https://ing-vsarm1011.github.io/E-Commerce/"
 }
